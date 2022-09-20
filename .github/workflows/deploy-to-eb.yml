@@ -1,0 +1,12 @@
+nom : deploy-to-eb 
+
+sur : 
+  push : 
+    branches : [ master ] 
+
+jobs : 
+  deploy : 
+    runs-on : ubuntu-latest 
+
+    steps : 
+      - uses : actions/checkout@v2
